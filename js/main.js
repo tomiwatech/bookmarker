@@ -104,10 +104,10 @@ function fetchBookmarks() {
         var siteUrl = bookmarkArray[i].url;
 
         bookmarkResults.innerHTML+= '<div class="well">'+
-            '<h3>'+siteName+
-            ' <a class="btn btn-default" target="_blank" href="'+siteUrl+'">Visit Site</a> '+
-            ' <a onclick="deleteBookmark(\''+siteUrl+'\')" class="btn btn-danger" href="#">Delete Bookmark</a> '+
-            '</h3>'+
+            '<h4 style="text-align: center">Website Name : '+siteName+
+            ' <br><br> <a class="btn btn-default" target="_blank" href="'+siteUrl+'">Visit Site</a> '+
+            ' <a onclick="deleteBookmark(\''+siteUrl+'\')" class="btn btn-danger" id="del" href="#">Delete Bookmark</a> '+
+            '</h4>'+
             '</div>';
     }
 }
